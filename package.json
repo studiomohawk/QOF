@@ -1,0 +1,12 @@
+{
+  "name": "qof",
+  "description": "Q.O.Fはフロントエンドにまつわるクオートを集積するウェブアプリケーションです。このアプリケーションはテストしやすいJavaScriptを書くためのデモアプリ。",
+  "version": "0.0.1",
+  "maintainers": [
+    {
+      "name": "Yuya Saito",
+      "email": "studiomohawk@gmail.com",
+      "web": "http://css.studiomohawk.com"
+    }
+  ]
+}
