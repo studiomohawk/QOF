@@ -1,22 +1,107 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Demo</title>
-		<meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Q.O.F - Quotes on Front-end</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Comfortaa:700,300">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/styles/index.css">
-	</head>
-	<body>
+  </head>
+  <body>
 
   <div id="page">
 
+  <header class="the-header">
+    <div class="unit-inner">
+      <div class="group-logo">
+        <div class="bd">
+          <a href="/" class="logo">Q.O.F</a>
+          <p class="catch">A Collection of Quotes for Front-end Developers</p>
+        </div>
+      </div>
+    </div>
+  </header>
   
+  <div class="the-body">
+
+    <div class="form-send">
+      <div class="unit-inner">
+        <textarea id="send-quote" name="send-quote" rows="5" placeholder="クオートを入力"></textarea>
+        <input id="author" type="text" placeholder="名前を入力" required="required">
+        <input id="source" type="text" placeholder="参照元URLを入力">
+        <div class="btn-center"><button type="submit" class="btn">保存</button></div>
+      </div>
+    </div>
+
+    <div class="list-quotes">
+      <div class="unit-inner">
+
+        <ul>
+          <li>
+            <div class="quote">
+              <p class="text">
+              No weapon has ever settled a moral problem. It can impose a solution but it cannot guarantee it to be a just one.
+              </p>
+              <p class="meta">
+                <span class="author">— Ernest Hemingway</span> / <span class="source">参照元</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="quote">
+              <p class="text">
+                The first draft of anything is shit.
+              </p>
+              <p class="meta">
+                <span class="author">— Ernest Hemingway</span> / <span class="source">参照元</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="quote">
+              <p class="text">
+                I think of a hero as someone who understands the degree of responsibility that comes with his freedom.
+              </p>
+              <p class="meta">
+                <span class="author">— Bob Dylan</span> / <span class="source">参照元</span>
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+   <!-- // .the-body --></div>
+
+  <footer class="the-footer">
+    <div class="unit-inner">
+      <div class="about">
+        <div class="bd">
+          <h4>About</h4>
+          <p>
+            Q.O.Fはフロントエンドにまつわるクオートを集積するウェブアプリケーションです。<br>
+            このアプリケーションは<strong>テストしやすいJavaScript</strong>を書くためのデモアプリです。
+          </p>
+          <p>
+            <a href="https://github.com/studiomohawk/QOF" class="link-external"><i class="icon icon-github"></i> <strong>Fork this on GitHub</strong></a>
+          </p>
+        </div>
+      </div>
+      <p class="madeintokyo">
+      Build by Yuya Saito. <a href="https://twitter.com/cssradar" rel="me" title="Twitter@cssradar">@cssradar</a><br>
+      Made Proudly in Tokyo.
+	    </p>
+
+    </div>
+  </footer>
 
   <!-- // #page --></div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="assets/scripts/index.js"></script>
-	</body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="assets/scripts/index.js"></script>
+  </body>
 </html>
