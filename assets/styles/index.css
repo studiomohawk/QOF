@@ -1,10 +1,8 @@
 /* ==========================================================================
 primary: Yuya Saito @ http://twitter.com/cssradar
 ============================================================================= */
-
 /* common
    ========================================================================== */
-
 *,
 *:after,
 *:before {
@@ -12,7 +10,6 @@ primary: Yuya Saito @ http://twitter.com/cssradar
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 body {
   background: url('/assets/images/textures/stressed_linen.png') repeat 0 0 #1a1a1a;
   color: #fafafa;
@@ -20,21 +17,19 @@ body {
   line-height: 1.6;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "MS PGothic", Osaka, Sans-Serif;
 }
-
-#page {
-  position: relative;
-}
+#page { position: relative }
 #page:before {
   content: ' ';
   display: block;
   width: 50%;
   height: 100%;
   position: absolute;
-    left: 0;
+  left: 0;
   border-right: 1px dashed rgba(56, 56, 56, 0.95);
   z-index: -1;
 }
-textarea, input[type="text"] {
+textarea,
+input[type="text"] {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.80);
   -webkit-box-shadow: 0px 1px 2px #333;
@@ -52,27 +47,18 @@ textarea, input[type="text"] {
   margin-left: auto;
   width: 510px;
 }
-
 a {
   color: #fafafa;
   text-decoration: none;
 }
-
 ul {
   padding: 0;
   list-style: none;
 }
-
-p {
-  margin: 0 0 25.6px 0;
-}
-
+p { margin: 0 0 25.6px 0 }
 /* header
    ========================================================================== */
-
-.group-logo {
-  text-align: center;
-}
+.group-logo { text-align: center }
 .logo {
   display: inline-block;
   width: 5em;
@@ -86,36 +72,44 @@ p {
   font-family: 'Comfortaa', sans-serif;
   line-height: 4.6em;
   margin: 25.6px 0;
-
   -webkit-transform: rotate(-8.5deg);
-     -moz-transform: rotate(-8.5deg);
-      -ms-transform: rotate(-8.5deg);
-       -o-transform: rotate(-8.5deg);
-          transform: rotate(-8.5deg);
-
+  -moz-transform: rotate(-8.5deg);
+  -ms-transform: rotate(-8.5deg);
+  -o-transform: rotate(-8.5deg);
+  transform: rotate(-8.5deg);
 }
 .catch {
   font-weight: 300;
   font-family: 'Comfortaa', sans-serif;
 }
-
 /* body
    ========================================================================== */
-.the-body {
-  border-bottom: 1px dashed rgba(56, 56, 56, 0.90);
-}
-.form-send {
+.the-body { border-bottom: 1px dashed rgba(56, 56, 56, 0.90) }
+.btn-new {
   margin-bottom: 25.6px;
+  min-width: 182px;
 }
-
+.animate {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.is-close {
+  opacity: 0;
+  height: 0;
+}
+.is-open {
+  opacity: 1;
+  height: 100%;
+}
+.form-send { margin-bottom: 25.6px }
 textarea {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   resize: none;
 }
-input[type="text"] {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
+input[type="text"] { border-top: 1px solid rgba(255, 255, 255, 0.15) }
 input[type="text"]:last-of-type {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -127,6 +121,7 @@ input[type="text"]:last-of-type {
 }
 .btn {
   padding: 10px 40px;
+  display: inline-block;
   background: #34BA59;
   color: #fafafa;
   border-radius: 4px;
@@ -138,10 +133,10 @@ input[type="text"]:last-of-type {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .btn:hover {
   background: #379462;
@@ -155,14 +150,8 @@ input[type="text"]:last-of-type {
   background: #30815A;
   border: solid 1px #215F46;
 }
-
-.list-quotes li {
-  margin-bottom: 25.6px;
-}
-.list-quotes li:last-child {
-  margin-bottom: 0;
-}
-
+.list-quotes li { margin-bottom: 25.6px }
+.list-quotes li:last-child { margin-bottom: 0 }
 .quote {
   background: rgba(0, 0, 0, 0.80);
   -webkit-box-shadow: 0px 1px 2px #333;
@@ -173,15 +162,11 @@ input[type="text"]:last-of-type {
   text-shadow: 0px 2px 3px #171717;
   padding: 0.5em;
 }
-
-.quote .text {
-  font-size: 150%;
-}
+.quote .text { font-size: 150% }
 .quote .meta {
   font-size: 80%;
   margin-bottom: 0;
 }
-
 /* footer
    ========================================================================== */
 .the-footer {
@@ -189,15 +174,10 @@ input[type="text"]:last-of-type {
   border-top: 1px solid #000;
   padding: 25.6px 0;
 }
-
 .link-external:link,
-.link-external:visited {
-  color: #34BA59;
-}
-
-.icon {
+.link-external:visited { color: #34BA59 }
+.icon-github {
   font-size: 150%;
   vertical-align: -4px;
 }
-
-.madeintokyo { margin-bottom: 0; }
+.madeintokyo { margin-bottom: 0 }

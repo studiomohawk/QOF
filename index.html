@@ -29,47 +29,25 @@
 
     <div class="form-send">
       <div class="unit-inner">
-        <textarea id="send-quote" name="send-quote" rows="5" placeholder="クオートを入力"></textarea>
-        <input id="author" type="text" placeholder="名前を入力" required="required">
-        <input id="source" type="text" placeholder="参照元URLを入力">
-        <div class="btn-center"><button type="submit" class="btn">保存</button></div>
+
+        <div class="btn-center"><a id="toggle-form" href="#" class="btn btn-new">新規登録 <i class="icon icon-chevron-right"></i></a></div>
+
+        <form id="send-quote" class="animate is-close">
+          <textarea id="quote-text" name="quote-text" rows="4" placeholder="クオートを入力"></textarea>
+          <input id="author" type="text" placeholder="名前を入力">
+          <input id="source" type="text" placeholder="参照元URLを入力(書籍の場合はAmazonなどのURL)">
+          <div class="btn-center">
+            <!-- <button type="submit" class="btn">保存</button> -->
+            <a id="form-send-mock" href="#" class="btn btn-save">保存</a>
+          </div>
+        </form>
       </div>
     </div>
 
     <div class="list-quotes">
       <div class="unit-inner">
 
-        <ul>
-          <li>
-            <div class="quote">
-              <p class="text">
-              No weapon has ever settled a moral problem. It can impose a solution but it cannot guarantee it to be a just one.
-              </p>
-              <p class="meta">
-                <span class="author">— Ernest Hemingway</span> / <span class="source">参照元</span>
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="quote">
-              <p class="text">
-                The first draft of anything is shit.
-              </p>
-              <p class="meta">
-                <span class="author">— Ernest Hemingway</span> / <span class="source">参照元</span>
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="quote">
-              <p class="text">
-                I think of a hero as someone who understands the degree of responsibility that comes with his freedom.
-              </p>
-              <p class="meta">
-                <span class="author">— Bob Dylan</span> / <span class="source">参照元</span>
-              </p>
-            </div>
-          </li>
+        <ul id="quotes">
 
         </ul>
 
