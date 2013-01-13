@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $('#form-send-mock').on('click', function(e){
     e.preventDefault();
-    // mock
     var data = {
       'quote': $('#quote-text').val(),
       'author': $('#author').val(),
@@ -16,11 +15,14 @@ $(document).ready(function() {
       '<p class="meta">' +
       '<span class="author">' +
       '—' + data.author +
-      '</span>' + '/' + '<span class="source"><a href="' + data.url + '">参照元</a></span>' +
+      '</span>' + ' / ' + '<span class="source"><a href="' + data.url + '">参照元</a></span>' +
       '</p>' +
       '</div>' +
       '</li>'
     );
+    $('#quote-text').val('');
+    $('#author').val('');
+    $('#source').val('');
   });
 });
 
