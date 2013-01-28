@@ -10,6 +10,7 @@ primary: Yuya Saito @ http://twitter.com/cssradar
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+html { overflow-y: scroll; }
 body {
   background: url('/assets/images/textures/stressed_linen.png') repeat 0 0 #1a1a1a;
   color: #fafafa;

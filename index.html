@@ -24,23 +24,23 @@
       </div>
     </div>
   </header>
-  
+
   <div class="the-body">
 
     <div class="form-send">
       <div class="unit-inner">
 
-        <div class="btn-center"><a id="toggle-form" href="#" class="btn btn-new">新規登録 <i class="icon icon-chevron-right"></i></a></div>
+        <div class="btn-center"><button id="toggle-form" class="btn btn-new">新規登録 <i class="icon icon-chevron-right"></i></button></div>
 
-        <form id="send-quote" class="animate is-close">
+        <div id="send-quote" class="animate is-close">
           <textarea id="quote-text" name="quote-text" rows="4" placeholder="クオートを入力"></textarea>
           <input id="author" type="text" placeholder="誰のクオートかを入力">
           <input id="source" type="text" placeholder="参照元URLを入力(書籍の場合はAmazonなどのURL)">
           <div class="btn-center">
             <!-- <button type="submit" class="btn">保存</button> -->
-            <a id="form-send-mock" href="#" class="btn btn-save">保存</a>
+            <button id="form-send-mock" class="btn btn-save">保存</button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 
@@ -80,6 +80,6 @@
   <!-- // #page --></div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="assets/scripts/index.js"></script>
+  <script src="app/app.js"></script>
   </body>
 </html>

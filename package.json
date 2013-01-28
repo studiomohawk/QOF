@@ -2,10 +2,12 @@
   "name": "qof",
   "description": "Q.O.Fはフロントエンドにまつわるクオートを集積するウェブアプリケーションです。このアプリケーションはテストしやすいJavaScriptを書くためのデモアプリ。",
   "version": "0.0.1",
-  "devDependencies" : {
+  "devDependencies": {
     "grunt": "~0.4.x",
     "grunt-contrib-watch": "~0.2.x",
-    "grunt-contrib-connect": "~0.1.x"
+    "grunt-contrib-connect": "~0.1.x",
+    "grunt-contrib-qunit": "0.1.x",
+    "sinon": "~1.5.x"
   },
   "maintainers": [
     {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>QUnit Test Suite</title>
+    <link rel="stylesheet" href="../../node_modules/grunt-contrib-qunit/test/libs/qunit.css">
+    <!-- qunitはjQueryに依存していないが、アプリケーションコードはjQuery依存の場合はテストでも利用できるように-->
+    <script src="../../app/libs/jquery.min.js"></script>
+    <!-- qunit -->
+    <script src="../../node_modules/grunt-contrib-qunit/test/libs/qunit.js"></script>
+    <!-- sinon.js -->
+    <script src="../libs/sinon.js"></script>
+    <!-- sinon-qunit.js -->
+    <script src="../libs/sinon-qunit.js"></script>
+    <!-- アプリケーション用JS -->
+    <script src="../../app/app.js"></script>
+    <!-- テスト用JS -->
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1 id="qunit-header">QUnit Test Suite</h1>
+    <h2 id="qunit-banner"></h2>
+    <div id="qunit-testrunner-toolbar"></div>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+    <div id="qunit-fixture">
+
+      <div class="form-send">
+        <div class="unit-inner">
+
+          <div class="btn-center"><button id="toggle-form" class="btn btn-new">新規登録 <i class="icon icon-chevron-right"></i></button></div>
+
+          <form id="send-quote" class="animate is-close">
+            <textarea id="quote-text" name="quote-text" rows="4" placeholder="クオートを入力"></textarea>
+            <input id="author" type="text" placeholder="誰のクオートかを入力">
+            <input id="source" type="text" placeholder="参照元URLを入力(書籍の場合はAmazonなどのURL)">
+            <div class="btn-center">
+              <!-- <button type="submit" class="btn">保存</button> -->
+              <button id="form-send-mock" class="btn btn-save">保存</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

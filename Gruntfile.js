@@ -6,9 +6,17 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 8000,
-          base: '.',
-          keepalive: true
+          base: '.'
         }
+      }
+    },
+    qunit: {
+      all: ['test/app/runner.html']
+    },
+    watch: {
+      test: {
+        files: ['app/**/*.js',' test/**/*.*'],
+        tasks: ['qunit']
       }
     }
   });
@@ -16,7 +24,8 @@ module.exports = function(grunt) {
   // Load plugin
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
-
+  grunt.loadNpmTasks('grunt-contrib-qunit');
   // Default task
-  grunt.registerTask('default', ['connect']);
+  grunt.registerTask('default', ['connect', 'watch', 'qunit']);
+  grunt.registerTask('test', ['qunit']);
 };
